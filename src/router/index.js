@@ -18,11 +18,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "register" */ '../views/Register.vue')
   },
   {
-    path: '/face',
-    name: 'Face',
-    component: () => import(/* webpackChunkName: "face" */ '../views/Face.vue')
-  },
-  {
     path: '/checkin',
     name: 'CheckIn',
     component: () => import(/* webpackChunkName: "checkin" */ '../views/CheckIn.vue')
@@ -32,6 +27,11 @@ const routes = [
     name: 'CheckOut',
     component: () => import(/* webpackChunkName: "checkout" */ '../views/CheckOut.vue')
   }
+  // ,{
+  //   path: '/face',
+  //   name: 'Face',
+  //   component: () => import(/* webpackChunkName: "face" */ '../views/Face.vue')
+  // },
 ]
 
 const router = createRouter({
