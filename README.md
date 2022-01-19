@@ -2,7 +2,7 @@
 
 ## Summary
 
-vue-carnival is a attendance system POC that makes use of face recognition to identiy the user and appropriately provide the ability to checkin / checkout. The application is built from VUE CLI and kept minimal as possible. Lot of features and enhacements can be done on top of this. Please refer to the docs folder in the repo for more technical infos.
+vue-carnival is a attendance system POC that makes use of face recognition to identiy the user and appropriately provide the ability to checkin / checkout. The application is built from VUE CLI and kept minimal as possible. Lot of features and enhacements can be done on top of this. Please refer to the docs folder in the repo for more technical infos. Please note that there will be delay in face recognition as all computations happen on the client side.
 
 ## Libraries Used
 
@@ -36,7 +36,7 @@ Simple clone the Gtihub repo (https://github.com/justadudewhohacks/face-api.js/)
 The models are available on the folder named: `weights`
 
 ```
-hs . --cors --port 8081
+hs . --cors -p 8081
 ```
 
 ## Vue Frontend setup
