@@ -1,19 +1,44 @@
-# vue-scope
+# vue-carnival is a Vue Attendance system POC
 
-## Project setup
+## Summary
+
+## Application Flow
+
+## How to Run Locally
+
+There are three parts to running the application locally
+
+- JSON Server that acts as the backend
+- Face API models needs for be static hosting
+- Vue Frontend application
+
+## Running the backend
+
+Backend is on JSON Server (https://github.com/typicode/json-server). Please refer to the github repo for installing it. The `vue-carnival` repository contains the empty database that needs to be used for the project. The database name is `db.json`
+
+The JSON server can be started as follows once installed:
+
 ```
-npm install
+json-server -p 9090 -w db.json
 ```
 
-### Compiles and hot-reloads for development
+## Hosting models for Face API library ( Needed for face recognition)
+
+Simple clone the Gtihub repo (https://github.com/justadudewhohacks/face-api.js/) and host it on static server. During my development, I hosted it on `http-server`(https://github.com/http-party/http-server).
+
+The models are available on the folder named: `weights`
+
+```
+hs . --cors --port 8081
+```
+
+## Vue Frontend setup
+
+Clone the repo, and run `npm install` to install the dependencies.
+You can complate and run the application
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Now you should be able to access the application from the browser using `http://localhost:8080`
