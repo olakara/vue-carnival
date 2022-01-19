@@ -1,3 +1,3 @@
 # High level flow
 
-![flow chart](https://github.com/olakara/vue-carnival/blob/main/docs/docs/images/high-level.png?raw=true)
+![flow chart](https://raw.githubusercontent.com/olakara/vue-carnival/main/docs/images/high-level-flow.png)
