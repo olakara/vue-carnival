@@ -7,8 +7,13 @@
       <button
         v-if="canTakeAction && canCheckIn"
         @click="onCheckInUserClick(user)"
+        class="btn btn-success"
       >Check In</button>
-      <button v-if="canTakeAction && !canCheckIn" @click="onCheckOutUserClick(user)">Check Out</button>
+      <button
+        v-if="canTakeAction && !canCheckIn"
+        @click="onCheckOutUserClick(user)"
+        class="btn btn-success"
+      >Check Out</button>
     </span>
     <span v-if="!processing && !userFound">User was not identified. Please register!</span>
   </div>

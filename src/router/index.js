@@ -27,11 +27,6 @@ const routes = [
     name: 'CheckOut',
     component: () => import(/* webpackChunkName: "checkout" */ '../views/CheckOut.vue')
   }
-  // ,{
-  //   path: '/face',
-  //   name: 'Face',
-  //   component: () => import(/* webpackChunkName: "face" */ '../views/Face.vue')
-  // },
 ]
 
 const router = createRouter({

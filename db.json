@@ -1,5 +1,12 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": "dbcc43ff-f0cb-41f1-8613-40997256d797",
+      "name": "Abdel Raoof",
+      "email": "olakara@gmail.com",
+      "photo": null
+    }
+  ],
   "entry": [],
   "profile": {
     "name": "typicode"

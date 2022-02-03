@@ -1,19 +1,23 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link>|
-    <router-link to="/register">Register</router-link>|
-    <router-link to="/about">About</router-link>
+    <router-link to="/register">Register</router-link>
   </div>
   <router-view />
 </template>
-<script>
 
+<script>
+// @ is an alias to /src
+import CameraViewPort from '@/components/CameraViewPort.vue'
 
 export default {
   name: 'App',
   components: {
+    CameraViewPort
+  },
+  mounted() {
 
-  }
+  },
 }
 </script>
 

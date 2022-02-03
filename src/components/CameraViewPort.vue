@@ -1,6 +1,6 @@
 <template>
-    <div class="video-mask">
-        <video id="camVideo" autoplay></video>
+    <div>
+        <video id="camVideo" autoplay class="video-circle"></video>
     </div>
     <canvas id="camPhoto" :width="450" :height="450" style="display:none"></canvas>
 </template>
@@ -39,9 +39,10 @@ export default {
 }
 </script>
 <style>
-.video-mask {
-    /* width: 450px;
-    border-radius: 100%;
-    overflow: hidden; */
+.video-circle {
+    border-radius: 50% !important;
+    width: 260px;
+    height: 260px;
+    border: 2px solid gray;
 }
 </style>
